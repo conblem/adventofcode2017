@@ -20,4 +20,4 @@ let main argv =
 
     printfn "%i" result
     System.Console.ReadKey() |> ignore
-    0 // return an integer exit code
+    0
