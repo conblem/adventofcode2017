@@ -8,10 +8,7 @@ let split (x: String) =
     |> List.ofArray
     |> List.map int
 
-let cheksum x =
-    let min = List.min x
-    let max = List.max x
-    max - min
+let cheksum x = (List.max x) - (List.min x)
 
 [<EntryPoint>]
 let main argv =
@@ -20,8 +17,8 @@ let main argv =
         |> File.ReadAllLines 
         |> List.ofArray
         |> List.map split
-        |> List.map cheksum
-        |> List.sum
+        |> List.sumBy cheksum
+
     printfn "%i" result
     System.Console.ReadKey() |> ignore
     0 // return an integer exit code
