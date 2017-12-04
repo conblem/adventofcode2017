@@ -16,7 +16,8 @@ let cheksum x =
 [<EntryPoint>]
 let main argv =
     let result = 
-        File.ReadAllLines "./2/input.txt"
+        "./2/input.txt"
+        |> File.ReadAllLines 
         |> List.ofArray
         |> List.map split
         |> List.map cheksum
