@@ -11,7 +11,7 @@ let rec find index step list =
 [<EntryPoint>]
 let main argv =
     let input =
-        "./5/input.txt"
+        "./input.txt"
         |> File.ReadAllLines
         |> Array.map int
         |> find 0 0

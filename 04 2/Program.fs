@@ -13,7 +13,7 @@ let distinct (elem: List<string>) =
 [<EntryPoint>]
 let main argv =
     let result = 
-        "./04 2/input.txt"
+        "./input.txt"
         |> File.ReadAllLines
         |> List.ofArray
         |> List.map split

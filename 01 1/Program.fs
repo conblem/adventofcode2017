@@ -10,7 +10,7 @@ let compute (last, total) elem =
 [<EntryPoint>]
 let main argv =
     let input =
-        "./1/input.txt"
+        "./input.txt"
         |> File.ReadAllText
         |> List.ofSeq
         |> List.map charToInt

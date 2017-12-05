@@ -11,7 +11,7 @@ let cheksum x = (List.max x) - (List.min x)
 [<EntryPoint>]
 let main argv =
     let result = 
-        "./2/input.txt"
+        "./input.txt"
         |> File.ReadAllLines 
         |> List.ofArray
         |> List.map split
