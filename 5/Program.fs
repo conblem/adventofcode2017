@@ -9,7 +9,9 @@ let replace (list: 'T []) index value =
 
 let rec iterate list index =
     match List.tryItem index with
-    | Some item -> replace(list index item)
+    | Some item -> 
+        replace(list index item)
+
     | None ->
 
 Array.set
