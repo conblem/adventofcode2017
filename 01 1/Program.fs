@@ -16,7 +16,7 @@ let main argv =
         |> List.map charToInt
 
     let last = List.last input
-    let (_, result) = List.fold compute (last, 0) input
+    let result = input |> List.fold compute (last, 0) |> snd
 
     printfn "%i" result
     System.Console.ReadKey() |> ignore
