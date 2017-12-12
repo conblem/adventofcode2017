@@ -30,7 +30,7 @@ let mapOperator (_::_::_::_::_::operator::_) acc =
     | "!=" -> {acc with Operator=(<>)}
     | _ -> acc
 
-let mapNumbers (_::_::value::_::_::_::compareValue::_: string list) acc = {
+let mapNumbers (_::_::value::_::_::_::compareValue::_) acc = {
     acc with
     Value=value |> int;
     CompareValue=compareValue |> int
